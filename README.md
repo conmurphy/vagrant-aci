@@ -100,19 +100,19 @@ These can either be specified by the flags above in the command line or alternat
 
 The following screenshots outline the steps to export an existing ANP as a JSON file. This filename is then referenced in the `vagrant aci app new` command. 
 
-Step 1. Build a template ANP in the ACI tenant. For this example we have created a simple profile containing a single End Point Group connected to a VMWare VCenter domain.
+**Step 1.** Build a template ANP in the ACI tenant. For this example we have created a simple profile containing a single End Point Group connected to a VMWare VCenter domain.
 
 ![alt tag](https://github.com/conmurphy/vagrant-aci/blob/master/images/step_1.png)
 
-Step 2. Right click `Application Profile` and select `Save as ...`
+**Step 2.** Right click `Application Profile` and select `Save as ...`
 
 ![alt tag](https://github.com/conmurphy/vagrant-aci/blob/master/images/step_2.png)
 
-Step 3. Select `Only Configuration`, `Subtree` and `json` and then download the file, making a note of where this resides.
+**Step 3.** Select `Only Configuration`, `Subtree` and `json` and then download the file, making a note of where this resides.
 
 ![alt tag](https://github.com/conmurphy/vagrant-aci/blob/master/images/step_3.png)
 
-Step 4. Open the JSON file and remove the following lines.
+**Step 4.** Open the JSON file and remove the following lines.
 
 ```
 "totalCount": "1",
@@ -120,7 +120,7 @@ Step 4. Open the JSON file and remove the following lines.
 ```
 Also remember to remove the lines at the end of the file containing the closing `}]` brackets.
 
-Step 5. Your file should now look similair to the following example.
+**Step 5.** Your file should now look similair to the following example.
 
 ```
 {
@@ -178,7 +178,7 @@ Step 5. Your file should now look similair to the following example.
 }
 ```
 
-Step 6. Run the `vagrant aci app new` command using either the flags or providing the details when prompted. 
+**Step 6.** Run the `vagrant aci app new` command using either the flags or providing the details when prompted. 
 
 ```
 $ vagrant aci app new --username admin --ip my-aci-cluster.acme.com --tenant acme --name website --path anp.json
