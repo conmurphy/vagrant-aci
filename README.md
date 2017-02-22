@@ -24,7 +24,6 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
 * Create Application Network Profiles within an ACI tenant based on a JSON config file
 * Delete ANPs within an ACI tenant 
 * List current ANPs and their associated End Point Groups and VMWare portgroups. 
-*
 
 ## Quick Usage
 
