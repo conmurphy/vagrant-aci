@@ -1,0 +1,53 @@
+{
+		"fvAp": {
+			"attributes": {
+				"descr": "",
+				"dn": "uni/tn-acme/ap-website-dev-template",
+				"name": "website-dev-template",
+				"ownerKey": "",
+				"ownerTag": "",
+				"prio": "unspecified"
+			},
+			"children": [{
+				"fvAEPg": {
+					"attributes": {
+						"descr": "",
+						"fwdCtrl": "",
+						"isAttrBasedEPg": "no",
+						"matchT": "AtleastOne",
+						"name": "web",
+						"pcEnfPref": "unenforced",
+						"prefGrMemb": "exclude",
+						"prio": "unspecified"
+					},
+					"children": [{
+						"fvRsDomAtt": {
+							"attributes": {
+								"classPref": "encap",
+								"delimiter": "",
+								"encap": "unknown",
+								"encapMode": "auto",
+								"instrImedcy": "lazy",
+								"primaryEncap": "unknown",
+								"resImedcy": "immediate",
+								"tDn": "uni/vmmp-VMware/dom-ACILab-vDS"
+							}
+						}
+					}, {
+						"fvRsCustQosPol": {
+							"attributes": {
+								"tnQosCustomPolName": ""
+							}
+						}
+					}, {
+						"fvRsBd": {
+							"attributes": {
+								"tnFvBDName": "default"
+							}
+						}
+					}]
+				}
+			}]
+		}
+
+}
