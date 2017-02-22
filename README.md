@@ -1,6 +1,6 @@
 # Cisco ACI Vagrant Command Plugin - Proof of Concept
 
-This is a plugin that allows Vagrant to interact with a Cisco Application Centric Infrastructure (ACI) environment and create/delete Application Network Profiles (ANP). 
+This is a plugin that allows Vagrant to interact with a Cisco Application Centric Infrastructure (ACI) environment to create/delete Application Network Profiles (ANP). 
 
 This plugin is currently a Proof of Concept and has been developed and tested against Cisco ACI 2.1 and Vagrant 1.2+
 
